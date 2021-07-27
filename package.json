@@ -1,0 +1,18 @@
+{
+  "name": "@drn/poc",
+  "description": "poc-jwplayer",
+  "author": "DRN",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "http-server . -i --cors * '*' -z -f -p 4821 -d "
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint && ng test --watch=false && npm run gendoc"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}
